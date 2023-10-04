@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 100%;
+}
+
+.shelf {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.first {
+    grid-column: 1 / 2;
+}
+
+.second {
+    grid-column: 2 / 3;
+}
+
+.third {
+    grid-column: 3 / 4;
+}
+
+.fourth {
+    grid-column: 4 / 5;
+}
+
+button#newBookButton{
+    background-color: red;
+    margin: 20px;
+}
